@@ -38,7 +38,7 @@ class Client {
         print('connection status: $isConnected');
       }
       await Future.delayed(Duration(seconds: 15));
-      print('delay: 10sec');
+      print('delay: 15 sec');
     }
   }
 }
