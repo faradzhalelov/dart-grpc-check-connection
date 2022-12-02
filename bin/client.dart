@@ -20,9 +20,10 @@ class Client {
 
     while (true) {
       try {
-        print('enter connection status...');
+        print('wait connection status...');
+        final result = await InternetAddress.lookup('www.google.com');
         message =
-            await stub?.checkConnection(Message(message: stdin.readLineSync()));
+            await stub?.checkConnection(Message(message: result.toString()));
         response = message.toString();
         print(response);
         if (response!.contains('ok')) {
@@ -32,11 +33,11 @@ class Client {
         }
       } catch (e) {
         print("Соединение нет");
-        break;
+        isConnected = false;
       } finally {
         print('connection status: $isConnected');
       }
-      await Future.delayed(Duration(seconds: 5));
+      await Future.delayed(Duration(seconds: 15));
       print('delay: 10sec');
     }
   }
