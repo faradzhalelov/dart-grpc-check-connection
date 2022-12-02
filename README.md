@@ -9,7 +9,7 @@
 - start server
 - server listening
 - start client
-- enter connection status:
-* if (ok) => message: ok
-* else => message: 404
-- 5 sec delay to reconnect
+- check connection to google.com
+* if (ok) => print 'message: ok'
+* else => print 'Соединения нет' //no connection
+- 15 sec delay to reconnect
