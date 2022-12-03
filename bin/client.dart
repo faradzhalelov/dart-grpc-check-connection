@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 import 'package:grpc/grpc.dart';
-import 'package:grpc_connection/src/generated/grpc_connection.pbgrpc.dart';
+import 'package:grpc_connection/proto/generated/grpc_connection.pbgrpc.dart';
 
 class Client {
   ClientChannel? channel;

@@ -1,5 +1,5 @@
-import 'package:grpc_connection/src/generated/grpc_connection.pb.dart';
-import 'package:grpc_connection/src/services/conection_service_int.dart';
+import 'package:grpc_connection/proto/generated/grpc_connection.pb.dart';
+import 'package:grpc_connection/services/conection_service_int.dart';
 
 class ConnectionServices implements IConnectionServices {
   @override
